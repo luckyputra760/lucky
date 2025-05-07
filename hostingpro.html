@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+  <script>
+    function hitungTotal(jumlah) {
+      const total = jumlah * 1000;
+      document.getElementById("total").innerText = "Rp" + total.toLocaleString();
+    }
+  </script>
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <div class="product-summary">
+      <p>Produk: <span id="productName">Paket hosting</span></p>
+      <p>Harga: <span id="productPrice">1 Bulan</span></p>
+    </div>
+
+    <div class="payment-form">
+      <h2>Pilih Jumlah</h2>
+  <button onclick="hitungTotal(50)">Pro</button>
+
+  <h3>Total: <span id="total">Rp0</span></h3>
+      <a href="selesai.html"><button onclick="proceedPayment()">Bayar Sekarang</button></a>
+    </div>
+
+    <p><a href="index.html">Kembali ke Beranda</a></p>
+  </div>
+
+  <script src="hostingpro.html" defer></script>
+</body>
+</html>

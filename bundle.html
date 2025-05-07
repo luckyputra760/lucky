@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <div class="product-summary">
+      <p>Produk: <span id="productName">Paket bundle hosting + Stream</span></p>
+      <p>Harga: <span id="productPrice">Rp 150.000</span></p>
+    </div>
+
+    <div class="payment-form">
+      <input type="text" id="cardNumber" placeholder="Nomor Kartu" required>
+      <input type="text" id="expDate" placeholder="MM/YY" required>
+      <input type="text" id="cvv" placeholder="CVV" required>
+      <button onclick="proceedPayment()">Bayar Sekarang</button>
+    </div>
+
+    <p><a href="index.html">Kembali ke Beranda</a></p>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

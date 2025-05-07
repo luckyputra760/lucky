@@ -1,0 +1,62 @@
+/* checkout.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .checkout-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .product-summary p {
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+  
+  .payment-form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-form button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #f87a12,#f7f7f7;
+    color: rgb(14, 248, 85),white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .payment-form button:hover {
+    background: #f87a12;
+  }
+  
+  .checkout-container a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #f87a12;
+    text-decoration: none;
+    font-weight: bold;
+  }
